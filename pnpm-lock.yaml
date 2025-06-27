@@ -42,14 +42,18 @@ catalogs:
     vitest:
       specifier: ^3.2.4
       version: 3.2.4
+  prod:
+    '@vill-v/type-as':
+      specifier: ^2.0.0
+      version: 2.0.0
 
 importers:
 
   .:
     dependencies:
       '@vill-v/type-as':
-        specifier: ^1.3.3
-        version: 1.3.3
+        specifier: catalog:prod
+        version: 2.0.0
     devDependencies:
       '@types/node':
         specifier: catalog:dev
@@ -803,16 +807,13 @@ packages:
     peerDependencies:
       prettier: '>=3'
 
-  '@vill-v/ts@1.3.3':
-    resolution: {integrity: sha512-XwQDtBWhh/P73TQco3EbexQk0RVVhFmY0iMbjRjLoFm/Ce2lIRf7sGKtA4NFeqBVf9gAbMxbaX8vpxeU72giBw==}
-
   '@vill-v/tsconfig@1.0.1':
     resolution: {integrity: sha512-z/IyrpmeI9ni7WkFChO377QCDDuX3yLwYs5MzGKwFt4PiSKAKHwtfP9fLQrSJnAgRXA5XdtmRKCo4icPK1oI/A==}
     peerDependencies:
       typescript: '>=5.0'
 
-  '@vill-v/type-as@1.3.3':
-    resolution: {integrity: sha512-ibW8V5aXuqBnHUpDaKN34S7Vun8eSy2neojZ5Slg4300SWtxM915fba65jsBosNB/qdQDcyIiwFgHutfKWiOLw==}
+  '@vill-v/type-as@2.0.0':
+    resolution: {integrity: sha512-m7DjK/qb0XpTTG/Ef6XGXGSiMglzq61Y6aX0H2mXWTqA54MOQM1inxws7skwQFuIJyQS/qjfycYat6Rq1hrpSg==}
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -2845,15 +2846,11 @@ snapshots:
     dependencies:
       prettier: 3.6.2
 
-  '@vill-v/ts@1.3.3': {}
-
   '@vill-v/tsconfig@1.0.1(typescript@5.8.3)':
     dependencies:
       typescript: 5.8.3
 
-  '@vill-v/type-as@1.3.3':
-    dependencies:
-      '@vill-v/ts': 1.3.3
+  '@vill-v/type-as@2.0.0': {}
 
   '@vitest/expect@3.2.4':
     dependencies:
