@@ -44,8 +44,8 @@ catalogs:
       version: 3.2.4
   prod:
     '@vill-v/type-as':
-      specifier: ^2.0.0
-      version: 2.0.0
+      specifier: ^2.0.1
+      version: 2.0.1
 
 importers:
 
@@ -53,7 +53,7 @@ importers:
     dependencies:
       '@vill-v/type-as':
         specifier: catalog:prod
-        version: 2.0.0
+        version: 2.0.1
     devDependencies:
       '@types/node':
         specifier: catalog:dev
@@ -812,8 +812,8 @@ packages:
     peerDependencies:
       typescript: '>=5.0'
 
-  '@vill-v/type-as@2.0.0':
-    resolution: {integrity: sha512-m7DjK/qb0XpTTG/Ef6XGXGSiMglzq61Y6aX0H2mXWTqA54MOQM1inxws7skwQFuIJyQS/qjfycYat6Rq1hrpSg==}
+  '@vill-v/type-as@2.0.1':
+    resolution: {integrity: sha512-KjgtwKxGYBmz9d1HWZAHQdpeK4dJQvRVyhhm/0y2AOVqkTTB1Iu+3nDX7M7wlgJFCQZVVw+XHQ0v2sepXgWrAg==}
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -2850,7 +2850,7 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  '@vill-v/type-as@2.0.0': {}
+  '@vill-v/type-as@2.0.1': {}
 
   '@vitest/expect@3.2.4':
     dependencies:

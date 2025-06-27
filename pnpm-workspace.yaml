@@ -1,6 +1,6 @@
 catalogs:
   prod:
-    '@vill-v/type-as': ^2.0.0
+    '@vill-v/type-as': ^2.0.1
   dev:
     '@types/node': ^22.15.33
     '@vill-v/bumpp-github': ^4.0.0
