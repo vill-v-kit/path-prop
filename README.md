@@ -7,7 +7,8 @@ neta了崩坏3 往世乐土的英杰维尔薇
 [![npm version](https://img.shields.io/npm/v/@vill-v/path-prop?color=orange)](https://npmjs.com/package/@vill-v/path-prop)
 [![npm downloads](https://img.shields.io/npm/dm/@vill-v/path-prop?color=orange)](https://npm.chart.dev/@vill-v/path-prop)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@vill-v/path-prop?color=orange)](https://bundlephobia.com/package/@vill-v/path-prop)
-[![license](https://img.shields.io/github/license/vill-v-kit/vill-v?color=orange)](https://github.com/vill-v-kit/vill-v/blob/true/LICENSE)
+[![install size](https://badgen.net/packagephobia/install/@vill-v/path-prop?color=orange)](https://packagephobia.com/result?p=@vill-v/path-prop)
+[![license](https://img.shields.io/github/license/vill-v-kit/path-prop?color=orange)](https://github.com/vill-v-kit/path-prop/blob/true/LICENSE)
 
 <!-- /automd -->
 
@@ -70,11 +71,11 @@ hasByPath(obj3, 'test[0].test1')
 
 <!-- automd:contributors author="Colourlessglow" license="MIT" -->
 
-Published under the [MIT](https://github.com/vill-v-kit/vill-v/blob/main/LICENSE) license.
-Made by [@Colourlessglow](https://github.com/Colourlessglow) and [community](https://github.com/vill-v-kit/vill-v/graphs/contributors) 💛
+Published under the [MIT](https://github.com/vill-v-kit/path-prop/blob/main/LICENSE) license.
+Made by [@Colourlessglow](https://github.com/Colourlessglow) and [community](https://github.com/vill-v-kit/path-prop/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/vill-v-kit/vill-v/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=vill-v-kit/vill-v" />
+<a href="https://github.com/vill-v-kit/path-prop/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=vill-v-kit/path-prop" />
 </a>
 
 <!-- /automd -->

@@ -9,8 +9,8 @@ type TransPathSquareBracketsToDot<T extends string> = T extends `[${infer Head}]
     ? `[${Head}].${TransPathSquareBracketsToDot<Tail>}`
     : `[${Head}]${TransPathSquareBracketsToDot<Tail>}`
   : T extends `${infer Head}[${infer Middle}]${infer Tail}`
-  ? `${Head}.${TransPathSquareBracketsToDot<`[${Middle}]${Tail}`>}`
-  : T
+    ? `${Head}.${TransPathSquareBracketsToDot<`[${Middle}]${Tail}`>}`
+    : T
 
 /**
  * FixSquareBracket<'[1]'>
@@ -25,12 +25,12 @@ type TransPathSquareBracketsToDot<T extends string> = T extends `[${infer Head}]
 type FixSquareBracket<T extends unknown> = T extends `[${infer Head extends number}]`
   ? Head
   : T extends `["${infer Head extends string}"]`
-  ? Head
-  : T extends `['${infer Head extends string}']`
-  ? Head
-  : T extends `[\`${infer Head extends string}\`]`
-  ? Head
-  : T
+    ? Head
+    : T extends `['${infer Head extends string}']`
+      ? Head
+      : T extends `[\`${infer Head extends string}\`]`
+        ? Head
+        : T
 
 /**
  * SplitPath<'x.y.z'>
@@ -45,10 +45,10 @@ type FixSquareBracket<T extends unknown> = T extends `[${infer Head extends numb
 type SplitPath<T extends string> = T extends `[${infer Head}].${infer Tail}`
   ? [`[${Head}]`, ...SplitPath<Tail>]
   : T extends `${infer Head}.${infer Tail}`
-  ? [Head, ...SplitPath<Tail>]
-  : T extends '.'
-  ? []
-  : [T]
+    ? [Head, ...SplitPath<Tail>]
+    : T extends '.'
+      ? []
+      : [T]
 
 /**
  * FixPath<['test','[0]','[\'foo.bar\']']>
@@ -71,14 +71,17 @@ export type ToPath<T extends Path> = T extends string
 type GetPropOf<Data, Key extends string | number> = Data extends null | undefined
   ? undefined
   : Key extends keyof Data
-  ? Data[Key]
-  : never
+    ? Data[Key]
+    : never
 
 type GetWithPath<Data, Keys extends readonly (string | number)[]> = Keys extends []
   ? Data
   : Keys extends readonly [infer Head, ...infer Tail]
-  ? GetWithPath<GetPropOf<Data, Extract<Head, string | number>>, Extract<Tail, (string | number)[]>>
-  : never
+    ? GetWithPath<
+        GetPropOf<Data, Extract<Head, string | number>>,
+        Extract<Tail, (string | number)[]>
+      >
+    : never
 
 /**
  *Get<{data:[0]},'data[0]'>
